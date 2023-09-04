@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Quienes Somos</title>
 
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Bootstrap icons-->
@@ -23,9 +23,20 @@
         <!-- Google fonts-->
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+        
         
 </head>
-<body>
+<body
+
+style="background-image: url('https://images.pexels.com/photos/4117260/pexels-photo-4117260.jpeg') ;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;"
+>
+
+<h1 class="display-5 fw-bolder" style="text-align: center;margin-top: 100px;text-decoration:underline">Educar para Transformar</h1>
 
    <!-- Product section-->
         <section class="py-5">
@@ -42,7 +53,7 @@
                     <div class="col-md-6">
   
                         
-                        <h1 class="display-5 fw-bolder">Educar para Transformar</h1>
+                        <!-- ACA IBA EL TITULO-->
   
                         <div class="fs-5 mb-5">
   
@@ -50,22 +61,36 @@
                             
                         </div>
   
-                        <p class="lead">Inspiramos, desafiamos y empoderamos a todos nuestros alumnos a ser miembros comprometidos y éticos de una comunidad global.
-Para que se conviertan en agentes de cambio conscientes de sí mismos,seguros, innovadores y colaborativos.</p>
-<p class="lead">
-El centro educativo es una institución de gestión privada de alta calidad educativa, ubicada en las afuera de la ciudad de Resistencia. </p>
+                        <p class="lead" style="background-color: black;color:white;padding: 10px;">
+                        ¡Bienvenidos a EDUCAR PARA TRANSFORMAR!
+
+En EDUCAR PARA TRANSFORMAR, estamos comprometidos con la excelencia educativa y la formación integral de nuestros estudiantes. Somos una institución de gestión privada que se distingue por ofrecer una educación de alta calidad que va más allá de lo académico.
+
+Nuestra misión es clara: educar no solo para informar, sino para inspirar y transformar vidas. Creemos en el poder de la educación para cambiar el mundo, y trabajamos incansablemente para empoderar a nuestros estudiantes con las herramientas, conocimientos y valores necesarios para alcanzar el éxito en un mundo en constante evolución.
+
+En nuestra página web, encontrarás una ventana a nuestro compromiso con la excelencia. Explora nuestras instalaciones de vanguardia, conoce a nuestro equipo docente altamente capacitado y descubre nuestros programas educativos innovadores diseñados para preparar a los líderes del futuro.
+
+Estamos emocionados de tenerte aquí y esperamos que encuentres toda la información que necesitas sobre EDUCAR PARA TRANSFORMAR. Si tienes alguna pregunta o necesitas más detalles, no dudes en contactarnos. Juntos, estamos construyendo un futuro brillante a través de la educación.
+
+¡Únete a nuestra comunidad educativa y sé parte del cambio! En EDUCAR PARA TRANSFORMAR, estamos formando mentes brillantes y corazones valientes que harán una diferencia en el mundo.
+
+Gracias por visitarnos y ser parte de nuestro viaje educativo. </p>
                       
                     </div>
                 </div>
    
             </div>
+
+
+
   
         </section>
   <!-- Copyright Section-->
+  <footer>
   <div class="copyright py-4 text-center text-white">
             <div class="container"><a href="index.php">Volver Inicio</a></div>
         </div>
-
+        </footer>
 
 
          <!-- Bootstrap core JS-->

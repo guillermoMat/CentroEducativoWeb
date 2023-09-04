@@ -43,6 +43,8 @@
 </head>
 <body id="page-top">
 
+<!--   SIDE BAR -->
+
     <!-- Page Wrapper -->
     <div id="wrapper">
 
@@ -53,7 +55,7 @@
 
 
             <!-- Sidebar - Brand -->
-            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.php">
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" >
                 <div class="sidebar-brand-icon rotate-n-15">
                     <i class="fas fa-laugh-wink">
                     </i>
@@ -123,7 +125,7 @@
                 Seguridad
             </div>
             <li class="nav-item">
-                <a class="nav-link" href="charts.html">
+                <a class="nav-link" href="bienestarEstudiantil.php">
                 <i class="fas fa-fw fa-folder"></i>
                     <span>Bienestar estudiantil</span></a>
             </li>
@@ -147,7 +149,7 @@
                 Comienza a educarte
             </div>
             <li class="nav-item">
-                <a class="nav-link" href="charts.html">
+                <a class="nav-link" href="inscripcion.php">
                 <i class="fas fa-fw fa-folder"></i>
                     <span>Solicitud de Inscripción</span></a>
             </li>
@@ -159,7 +161,7 @@
                 Quiero formar parte de la institución
             </div>
             <li class="nav-item">
-                <a class="nav-link" href="charts.html">
+                <a class="nav-link" href="https://docs.google.com/forms/d/e/1FAIpQLSdR1X6W5xKI0rOFm6rqPcgLL_d0_9RdwhMOGL_QQS8_B08DYw/viewform?usp=sf_link" target="_blank">
                 <i class="fas fa-fw fa-folder"></i>
                     <span>Solicitud de Empleo</span></a>
             </li>
