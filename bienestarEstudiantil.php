@@ -14,7 +14,48 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js" crossorigin="anonymous" defer></script>
+<link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css" rel="stylesheet" crossorigin="anonymous">
 
+<style>
+    .swiffy-slider {
+  max-width: 1000px; /* Ancho máximo deseado para el carrusel */
+  margin: 0 auto; /* Centrar horizontalmente el carrusel */
+}
+
+.slider-container {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  position: relative;
+  white-space: nowrap;
+  text-align: center; /* Alinea los elementos del carrusel al centro */
+}
+
+.slider-container li {
+  display: inline-block;
+}
+
+.slider-nav,
+.slider-nav-next {
+    
+    background-color: black;
+  color: white; /* Cambia el color del texto a blanco */
+  border: none; /* Elimina los bordes si los hubiera */
+  padding: 5px 10px; /* Ajusta el relleno según tus preferencias */
+  border-radius: 4px; /* Agrega esquinas redondeadas si lo deseas */
+  cursor: pointer;
+}
+.slider-indicators button.active {
+  background-color: white; /* Cambia el color de fondo del botón activo */
+  color: black; /* Cambia el color del texto del botón activo */
+}
+
+.slider-nav-next {
+  right: 0;
+}
+</style>
 
 </head>
 <body>
@@ -22,15 +63,30 @@
     
 <h1 class="display-5 fw-bolder" style="text-align: center;margin-top: 100px;text-decoration:underline;margin-bottom: 50px">Bienestar Estudiantil</h1>
     
-        <img src="img/fondo quienes somos.jpg" alt="Imagen Izquierda" style="width: 100%;height:350px;margin-bottom: 100px;" >
+        <!-- Carrusel de fotos -->
 
+        <div class="swiffy-slider">
+    <ul class="slider-container">
+        <li><img src="img/ejemploPrimaria.jpg" style="max-width: 80%;height: auto;"></li>
+        <li><img src="img/ejemploLibrary.jpg" style="max-width: 80%;height: auto;"></li>
+        <li><img src="img/ejemploSecundaria.jpg" style="max-width: 80%;height: auto;"></li>
+    </ul>
 
+    <button type="button" class="slider-nav" ></button>
+    <button type="button" class="slider-nav slider-nav-next"></button>
+
+    <div class="slider-indicators">
+        <button class="active"></button>
+        <button></button>
+        <button></button>
+    </div>
+</div>
         
 
 
 
 
-        <h1 class="display-5 fw-bolder" style="text-align: center;margin-bottom: 50px;text-decoration:underline">El centro educativo cuenta con:</h1>
+        <h1 class="display-5 fw-bolder" style="text-align: center;margin-bottom: 50px;margin-top:25px;text-decoration:underline">El centro educativo cuenta con:</h1>
         <div class="container">
         <div class="row">
             <div class="col-md-6">

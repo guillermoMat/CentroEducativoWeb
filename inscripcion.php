@@ -2,19 +2,20 @@
 <!--       guardamos las citas  -->
 <?php
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
-    $nombre = $_POST["nombre"];
-    $comentario = $_POST["comentario"];
-    $comentario = "Nombre: " . $nombre . "\nComentario: " . $comentario . "\n\n";
+    $nombrePadre = $_POST["nombrePadre"];
+    $nombreMadre = $_POST["nombreMadre"];
+    $telefono = $_POST["telefono"];
+    $comentario = "Padre: " . $nombrePadre . "- Madre: " . $nombreMadre . "- Telefono: ". $telefono."\n\n" ;
 
     // Abre el archivo de comentarios (o crea uno si no existe)
-    $archivo = fopen("comentarios.txt", "a");
+    $archivo = fopen("solicitudCitas.txt", "a");
 
     if ($archivo) {
         fwrite($archivo, $comentario);
         fclose($archivo);
-        echo "Comentario guardado correctamente.";
+        echo "Solicitud de cita agendada correctamente.";
     } else {
-        echo "Error al guardar el comentario.";
+        echo "Error al guardar cita.";
     }
 }
 ?>
@@ -44,18 +45,18 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 <div class="container mt-5" style="margin-bottom: 20px;">
   
   <h4>Dejenos sus datos para que la institución organice una cita para poder empezar con los tramites correspondientes.</h4>
-  <form method="post" action="index.php">
+  <form method="post" action="inscripcion.php">
     <div class="form-group">
       <label for="nombre">Nombre del padre:</label>
-      <input type="text" class="form-control" id="nombre" name="nombre" autocomplete="off">
+      <input type="text" class="form-control" id="nombre" name="nombrePadre" autocomplete="off">
     </div>
     <div class="form-group">
       <label for="nombre">Nombre de la madre:</label>
-      <input type="text" class="form-control" id="nombre" name="nombre" autocomplete="off">
+      <input type="text" class="form-control" id="nombre" name="nombreMadre" autocomplete="off">
     </div>
     <div class="form-group">
       <label for="nombre"> Teléfono:</label>
-      <input type="text" class="form-control" id="nombre" name="nombre" autocomplete="off">
+      <input type="text" class="form-control" id="nombre" name="telefono" autocomplete="off">
     </div>
     <input type="submit" class="btn btn-primary" value="Enviar datos">
   </form>

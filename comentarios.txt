@@ -7,9 +7,10 @@ Comentario: muy linda pagina!
 Nombre: Carlos Piero
     -      Comentario: Muy buena institución.
 
-Nombre: 
-    -      Comentario: 
 
-Nombre: 
-    -      Comentario: 
+Nombre: Pedro
+    -      Comentario: nuevo intento
+
+Nombre: Soledad
+    -      Comentario: Que lindo tooddddooo
 

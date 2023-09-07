@@ -1,6 +1,9 @@
 
 <!--       guardamos los comentarios  -->
 <?php
+
+
+
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $nombre = $_POST["nombre"];
     $comentario = $_POST["comentario"];
@@ -18,21 +21,24 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     }
 }
 
-
+//para el boton de iniciar/cerrar sesion, tienen que ir al principio de cualquier otro codigo o sino da error
 session_start();
 
 // Verificar si el usuario está autenticado
+/*
 if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
     header("Location: login.php");
     exit();
 }
-
-// Cerrar la sesión cuando se hace clic en el botón de "Cerrar sesión"
+*/
+/* Cerrar la sesión cuando se hace clic en el botón de "Cerrar sesión"
 if (isset($_POST["cerrar_sesion"])) {
     session_destroy(); // Destruir todas las sesiones
     header("Location: login.php");
     exit();
 }
+*/
+
 ?>
 
 
@@ -80,37 +86,55 @@ include 'barraNavegacion.php';
                 
 
 
+
+
+
                 <!-- Barra de navegacion -->
 
 <nav class="navbar navbar-expand-sm navbar-dark bg-primary" style="float: right;margin-top:5px">
 
-<!-- Cerrar sesion -->
 
-                <form method="POST" style="margin-right:100px;">
-                    <input type="submit" name="cerrar_sesion" class="btn btn-danger" value="Cerrar sesión">
-                </form>
+<!-- botones Inicio/Cerrar sesion -->
 
-    <a class="navbar-brand" >Redes sociales</a>
+<?php
+// Inicia la sesión (asegúrate de hacerlo antes de cualquier salida al navegador)
+
+//session_start();
+
+// Verifica si el usuario ha iniciado sesión (por ejemplo, comprobando si existe una variable de sesión)
+if (isset($_SESSION['usuario'])) {
+    echo '<form method="POST" action="cerrar_sesion.php">
+              <input type="submit" name="cerrar_sesion" class="btn btn-danger" value="Cerrar sesión">
+          </form>';
+} else {
+    echo '<form method="POST" action="iniciar_sesion.php">
+              <input type="submit" name="iniciar_sesion" class="btn btn-success" value="Iniciar sesión">
+          </form>';
+}
+?>
+              
+
+    <a class="navbar-brand"  style="margin-left:30px">Redes sociales</a>
     
     <div class="collapse navbar-collapse" id="collapsibleNavId" style="float: right;">
        
     <div style="float: right;">
                 <!-- Facebook -->
-<a class="btn btn-primary" style="background-color: #3b5998;" href="#!" role="button"
+<a class="btn btn-primary" style="background-color: #3b5998;" href="https://www.facebook.com/" role="button target="_blank""
   ><i class="fab fa-facebook-f"></i
 ></a>
 
 
 
-<!-- Google -->
-<a class="btn btn-primary" style="background-color: #dd4b39;" href="#!" role="button"
-  ><i class="fab fa-google"></i
-></a>
+
+<a class="btn btn-primary" style="background-color: #dd4b39;" href="https://outlook.live.com/owa/" role="button" target="_blank" title="paratransformare@gmail.com">
+  <i class="fas fa-envelope"></i>
+</a>
 
 
 
 <!-- Whatsapp -->
-<a class="btn btn-primary" style="background-color: #25d366;" href="#!" role="button"
+<a class="btn btn-primary" style="background-color: #25d366;" href="https://web.whatsapp.com/" role="button target="_blank""
   ><i class="fab fa-whatsapp"></i
 ></a>
 
@@ -165,8 +189,8 @@ include 'barraNavegacion.php';
                        
                             <!-- Project Card Example -->
                            
-                            <img class="card-img-top mb-5 mb-md-0" src="img/logo3redondos.png" alt="..." style="align-items: center;" width="50" height="250"/>
-                            <p style="color:black">
+                            <img class="card-img-top mb-5 mb-md-0" src="img/logo redondo.png" alt="..." style="align-items: center;" width="50" height="250"/>
+                            <p style="background-color: rgba(255, 255, 255, 0.5); padding: 10px;">
                             Inspiramos, desafiamos y empoderamos a todos nuestros alumnos a ser miembros comprometidos y éticos de una comunidad global.
                             Para que se conviertan en agentes de cambio conscientes de sí mismos,seguros, innovadores y colaborativos.
                             </p>   
@@ -269,34 +293,39 @@ include 'barraNavegacion.php';
             <br/>
                 <div class="row">
                     <!-- Footer Location-->
+
+                    <!-- Footer Location-->
+                    <div class="col-lg-4 mb-5 mb-lg-0">
+                        <h4 class="text-uppercase mb-4">Lucas Encinas</h4>
+                        <p class="lead mb-0">
+                        <a href="https://www.linkedin.com/in/lucasluqueencina" target="_blank">LinkedIn
+                        <i class="fab fa-linkedin"></i> 
+                        </a>
+                        </p>
+                    </div>
                     
                   <!-- Footer Location-->
                   <div class="col-lg-4 mb-5 mb-lg-0">
                         <h4 class="text-uppercase mb-4">Paula Piedra</h4>
                         <p class="lead mb-0">
-                        Linkedin
-                            <br />
-                            alguna red social o correo
+                        <a href="https://www.linkedin.com/in/pauliipiedra/" target="_blank">LinkedIn
+                        <i class="fab fa-linkedin"></i> 
+                        </a>
                         </p>
                     </div>
-                    <!-- Footer Location-->
-                    <div class="col-lg-4 mb-5 mb-lg-0">
-                        <h4 class="text-uppercase mb-4">Lucas Encinas</h4>
-                        <p class="lead mb-0">
-                        Linkedin
-                            <br />
-                            alguna red social o correo
-                        </p>
-                    </div>
+                    
                     <!-- Footer Location-->
                     <div class="col-lg-4">
                         <h4 class="text-uppercase mb-4">Guillermo Mathieu</h4>
                         <p class="lead mb-0">
-                        Linkedin
-                            <br />
-                            alguna red social o correo
+                        <a href="https://www.linkedin.com/in/guillermo-mathieu-b547a124a" target="_blank">LinkedIn
+                        <i class="fab fa-linkedin"></i> 
+                        </a>
+                        
                         </p>
                     </div>
+
+                    
 
                 </div>
             </div>
