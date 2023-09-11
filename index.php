@@ -57,7 +57,7 @@ if (isset($_POST["cerrar_sesion"])) {
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
 
-         
+
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body id="page-top">
@@ -66,7 +66,7 @@ if (isset($_POST["cerrar_sesion"])) {
     <!-- Page Wrapper -->
     <div id="wrapper">
 
-    <?php 
+    <?php
 include 'barraNavegacion.php';
 
 ?>
@@ -77,13 +77,13 @@ include 'barraNavegacion.php';
             <!-- Main Content -->
             <div id="content">
 
-                
+
                 <!-- End of Topbar -->
 
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
 
-                
+
 
 
 
@@ -112,12 +112,12 @@ if (isset($_SESSION['usuario'])) {
           </form>';
 }
 ?>
-              
+
 
     <a class="navbar-brand"  style="margin-left:30px">Redes sociales</a>
-    
+
     <div class="collapse navbar-collapse" id="collapsibleNavId" style="float: right;">
-       
+
     <div style="float: right;">
                 <!-- Facebook -->
 <a class="btn btn-primary" style="background-color: #3b5998;" href="https://www.facebook.com/" role="button target="_blank""
@@ -139,23 +139,23 @@ if (isset($_SESSION['usuario'])) {
 ></a>
 
 </div>
-        
+
     </div>
 </nav>
-              
+
 
                     <!-- Page Heading -->
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
                     <h1 class="display-5 fw-bolder" style="text-align: center;margin-bottom: 20px;margin-left:20px;margin-top:100px;text-decoration:underline;">Bienvenidos</h1>
                     </div>
 
-                    
-                    
 
-                  
-                    
 
-                    
+
+
+
+
+
 
                     <!-- Content Row -->
                     <div class="row">
@@ -164,15 +164,15 @@ if (isset($_SESSION['usuario'])) {
                          <!--
                         <div
                                     class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                                        <h6 class="m-0 font-weight-bold text-primary">Titulo 2</h6>     
-                                   
+                                        <h6 class="m-0 font-weight-bold text-primary">Titulo 2</h6>
+
                                     <div class="dropdown no-arrow">
-                                         linea divisora    
+                                         linea divisora
                                     </div>
-                                    
+
                                 </div>
                                 -->
-                                
+
 
                         </div>
 
@@ -180,25 +180,25 @@ if (isset($_SESSION['usuario'])) {
                     <div class="col-md-6 "><img class="card-img-top mb-5 mb-md-0" src="img/logo 2.png" alt="..." /></div>
                     -->
                         <div class="col-lg-4 mb-4" "> <!-- style="background-color:#457b9d;  -->
-                            
-                      
-                      <!-- class="card-img-top mb-5 mb-md-0"  
-                    
+
+
+                      <!-- class="card-img-top mb-5 mb-md-0"
+
                     width="150" height="250"
                 -->
-                       
+
                             <!-- Project Card Example -->
-                           
+
                             <img class="card-img-top mb-5 mb-md-0" src="img/logo redondo.png" alt="..." style="align-items: center;" width="50" height="250"/>
                             <p style="background-color: rgba(255, 255, 255, 0.5); padding: 10px;">
                             Inspiramos, desafiamos y empoderamos a todos nuestros alumnos a ser miembros comprometidos y éticos de una comunidad global.
                             Para que se conviertan en agentes de cambio conscientes de sí mismos,seguros, innovadores y colaborativos.
-                            </p>   
-                            
+                            </p>
+
 
                         </div>
 
-                        
+
                     </div>
 
                 </div>
@@ -226,11 +226,11 @@ if (isset($_SESSION['usuario'])) {
                         <style>.mapouter{position: relative;text-align: right;height: 560px;width: 820px;}</style>
                         <a href="https://www.embedmaps.co">embed google maps</a>
                         <style>.gmap_canvas{overflow: hidden;background: none !important;height: 560px;width: 820px;}</style>
-                        
+
                     </div>
-                    
+
                 </div>
-                
+
             <!--       COMENTARIOS  -->
 
             <div class="d-sm-flex align-items-center justify-content-between mb-4">
@@ -240,7 +240,7 @@ if (isset($_SESSION['usuario'])) {
             <!--       MOSTRAR COMENTARIOS  -->
 
             <div class="container mt-5">
-  
+
                     <div class="container mt-5">
                         <h2>Comentarios realizados</h2>
                     </div>
@@ -296,36 +296,36 @@ if (isset($_SESSION['usuario'])) {
 
                     <!-- Footer Location-->
                     <div class="col-lg-4 mb-5 mb-lg-0">
-                        <h4 class="text-uppercase mb-4">Lucas Encinas</h4>
+                        <h4 class="text-uppercase mb-4">Lucas Luque</h4>
                         <p class="lead mb-0">
                         <a href="https://www.linkedin.com/in/lucasluqueencina" target="_blank">LinkedIn
-                        <i class="fab fa-linkedin"></i> 
+                        <i class="fab fa-linkedin"></i>
                         </a>
                         </p>
                     </div>
-                    
+
                   <!-- Footer Location-->
                   <div class="col-lg-4 mb-5 mb-lg-0">
                         <h4 class="text-uppercase mb-4">Paula Piedra</h4>
                         <p class="lead mb-0">
                         <a href="https://www.linkedin.com/in/pauliipiedra/" target="_blank">LinkedIn
-                        <i class="fab fa-linkedin"></i> 
+                        <i class="fab fa-linkedin"></i>
                         </a>
                         </p>
                     </div>
-                    
+
                     <!-- Footer Location-->
                     <div class="col-lg-4">
                         <h4 class="text-uppercase mb-4">Guillermo Mathieu</h4>
                         <p class="lead mb-0">
                         <a href="https://www.linkedin.com/in/guillermo-mathieu-b547a124a" target="_blank">LinkedIn
-                        <i class="fab fa-linkedin"></i> 
+                        <i class="fab fa-linkedin"></i>
                         </a>
-                        
+
                         </p>
                     </div>
 
-                    
+
 
                 </div>
             </div>
