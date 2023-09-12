@@ -137,7 +137,7 @@
                 Mantente al Día!
             </div>
             <li class="nav-item">
-                <a class="nav-link" href="charts.html">
+                <a class="nav-link" href="SeccionNoticias/index.php">
                     <i class="fas fa-fw fa-chart-area"></i>
                     <span>Noticias</span></a>
             </li>
