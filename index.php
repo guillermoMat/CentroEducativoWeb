@@ -15,7 +15,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     if ($archivo) {
         fwrite($archivo, $comentario);
         fclose($archivo);
-        echo "Comentario guardado correctamente.";
+        //echo "Comentario guardado correctamente.";
     } else {
         echo "Error al guardar el comentario.";
     }
@@ -272,11 +272,15 @@ if (isset($_SESSION['usuario'])) {
       <label for="comentario">Comentario:</label>
       <textarea class="form-control" id="comentario" name="comentario" rows="4"></textarea>
     </div>
-    <input type="submit" class="btn btn-primary" value="Enviar comentario">
+    <input type="submit" class="btn btn-primary" value="Enviar comentario" onclick="mostrarAviso()">
   </form>
 </div>
 
-
+<script>
+    function mostrarAviso() {
+      alert('Comentario realizado!');
+    }
+  </script>
 
 
             </div>
