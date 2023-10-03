@@ -9,6 +9,8 @@
 
 
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    
+    
 
 
 <style>
@@ -31,6 +33,15 @@
 #login .container #login-row #login-column #login-box #login-form #register-link {
   margin-top: -85px;
 }
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+ 
+  max-width: 100%;
+  box-sizing: border-box;
+}
     </style>
 
 <!------ Include the above in your HEAD tag ---------->
@@ -38,6 +49,7 @@
 </head>
 
 <body>
+    <!-- ANTIGUO VALOR DEL ID roles -->
     <div id="login">
         <h3 class="text-center text-white pt-5">Iniciar Sesión</h3>
         <div class="container">
@@ -48,10 +60,19 @@
                              <!--   <h3 class="text-center text-info">Acceso</h3>   -->
                             <div class="form-group">
                                 <label for="roles" class="text-info">Rol:</label><br>
-                                <input type="radio"  name="rol" value="padre" id="roles" required>Padre  
-                                <input type="radio"  name="rol" value="estudiante" id="roles" required style="margin-left:20px ;">Estudiante    
-                                <input type="radio" name="rol" value="docente" id="roles" required style="margin-left:20px ;">Docente
-                                <input type="radio" name="rol" value="empleado" id="roles" required style="margin-left:20px ;">Empleado<br>
+                                <label for="padre">
+                                    <input type="radio"  name="rol" value="padre" id="padre" required>Padre  
+                                </label>
+                                <label for="estudiante">
+                                    <input type="radio"  name="rol" value="estudiante" id="estudiante" required style="margin-left:20px ;">Estudiante
+                                </label>
+                                <label for="docente">
+                                    <input type="radio" name="rol" value="docente" id="docente" required style="margin-left:20px ;">Docente
+                                </label>
+                                <label for="empleado">
+                                    <input type="radio" name="rol" value="empleado" id="empleado" required style="margin-left:20px ;">Empleado
+                                </label>
+                                
                             </div>
                             <div class="form-group">
                                 <label for="username" class="text-info">Usuario:</label><br>
@@ -79,9 +100,16 @@
         </div>
     </div>
 
+        <!-- footer     -->
+<footer>
+    <div class="copyright py-4 text-center" style="background-color:#1b263b;margin-top: 100px;">
+            <div class="container"><a href="index.php">Volver Inicio</a></div>
+        </div>
+</footer>
 
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 
 </body>
 </html>
